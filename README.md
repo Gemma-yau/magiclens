@@ -24,7 +24,7 @@ supported by MagicLens.
 
 ## Setup
 ```
-conda create --name magic_lens python=3.9
+conda create --name magic_lens python=3.10
 conda activate magic_lens
 git clone https://github.com/google-research/scenic.git
 cd scenic
@@ -52,7 +52,7 @@ gsutil cp -R gs://gresearch/magiclens/models ./
 OR via [google drive](https://drive.google.com/drive/folders/1MXszMqIIh-yV7cYxWUxP7uHs9gfuTT3u)
 
 ### Data Preparation
-Please follow each dataset folder in `./data`. Currently we have successfully tested FIQ, CIRCO, and DTIN:
+Please follow each dataset folder in `./data`.
 
 ## Inference
 ```
@@ -63,54 +63,6 @@ python inference.py \
 
 ```
 
-Due to the weight conversion, the performance may be slightly different:
-
-In `CIRCO`
-| Model | map@5 | map@10 | map@25 | map@50 |
-|----------|----------|----------|----------|----------|
-| Prior SOTA | 26.8 | 27.6 | 30.0 | 31.0 |
-| Base (original) | 23.1 | 23.8 | 25.8 | 26.7 |
-| Base (converted) | 22.3 | 23.2 | 25.0 | 26.0 |
-| Large (original) | 29.6 | 30.8 | 33.4 | 34.4 |
-| Large (converted) | 29.5 | 30.8 | 33.2 | 34.3 |
-
-## Citing this work
-
-Add citation details here, usually a pastable BibTeX snippet:
-
-```latex
-@inproceedings{zhang2024magiclens,
-  title = 	 {{M}agic{L}ens: Self-Supervised Image Retrieval with Open-Ended Instructions},
-  author =       {Zhang, Kai and Luan, Yi and Hu, Hexiang and Lee, Kenton and Qiao, Siyuan and Chen, Wenhu and Su, Yu and Chang, Ming-Wei},
-  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
-  pages = 	 {59403--59420},
-  year = 	 {2024},
-  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
-  volume = 	 {235},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {21--27 Jul},
-  publisher =    {PMLR},
-  url = 	 {https://proceedings.mlr.press/v235/zhang24an.html}
-}
-
-```
-
-## License and disclaimer
-
-Copyright 2024 DeepMind Technologies Limited
-
-All software is licensed under the Apache License, Version 2.0 (Apache 2.0);
-you may not use this file except in compliance with the Apache 2.0 license.
-You may obtain a copy of the Apache 2.0 license at:
-https://www.apache.org/licenses/LICENSE-2.0
-
-All other materials are licensed under the Creative Commons Attribution 4.0
-International License (CC-BY). You may obtain a copy of the CC-BY license at:
-https://creativecommons.org/licenses/by/4.0/legalcode
-
-Unless required by applicable law or agreed to in writing, all software and
-materials distributed here under the Apache 2.0 or CC-BY licenses are
-distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
 either express or implied. See the licenses for the specific language governing
 permissions and limitations under those licenses.
 
