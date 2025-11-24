@@ -1,7 +1,7 @@
 # MagicLens
 Basic Information of selected paper
-Paper Name: MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions
-Authors: Kai Zhang, Yi Luan, Hexiang Hu, Kenton Lee, Siyuan Qiao, Wenhu Chen, Yu Su, Ming-Wei Chang
+Paper Name: MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions\n
+Authors: Kai Zhang, Yi Luan, Hexiang Hu, Kenton Lee, Siyuan Qiao, Wenhu Chen, Yu Su, Ming-Wei Chang\n
 Venue: the International Conference on Machine Learning (ICML) 2024
 
 
