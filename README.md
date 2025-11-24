@@ -1,26 +1,10 @@
 # MagicLens
+Basic Information of selected paper
+Paper Name: MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions
+Authors: Kai Zhang, Yi Luan, Hexiang Hu, Kenton Lee, Siyuan Qiao, Wenhu Chen, Yu Su, Ming-Wei Chang
+Venue: the International Conference on Machine Learning (ICML) 2024
 
-This repo contains implementation of MagicLens. The code here uses Jax and Flax.
-Note that the current implementation does not yet support training.
-Refer to the [website](https://open-vision-language.github.io/MagicLens/) for dataset examples.
 
-## Abstract
-
-We introduce MagicLens, a series of self-supervised image retrieval models that support
-open-ended instructions. The core thesis of MagicLens is that text
-instructions can enable retrieving images with
-richer relations beyond visual similarity. MagicLens is built on a
-key novel insight: image pairs that naturally occur
-on the same web pages contain a wide range of implicit relations (e.g., inside view of), and we
-can bring those implicit relations explicit by synthesizing instructions via large multimodal models (LMMs) and large language models (LLMs).
-Trained on 36.7M (query image, instruction, target image) triplets with rich semantic relations
-mined from the web, MagicLens achieves comparable or better results on eight benchmarks of
-various image retrieval tasks than prior state-of-the-art (SOTA) methods. Remarkably, it outperforms previous SOTA but with a 50× smaller
-model size on multiple benchmarks. Additional
-human analyses on a 1.4M-image unseen corpus
-further demonstrate the diversity of search intents
-supported by MagicLens.
-![Intro image](https://open-vision-language.github.io/MagicLens/static/images/magiclens_overview.png)
 
 ## Setup
 ```
