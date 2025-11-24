@@ -146,6 +146,9 @@ if __name__ == "__main__":
   # import pdb; pdb.set_trace()
   if args.dataset in ["fiq-dress", "fiq-shirt", "fiq-toptee"]:
     eval_dataset.evaluate_recall()
+    eval_dataset.write_to_file(
+        os.path.join(args.output, args.dataset + "_" + args.model_size)
+    )
   elif args.dataset in ["circo"]:
     eval_dataset.write_to_file(
         os.path.join(args.output, args.dataset + "_" + args.model_size)
