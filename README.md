@@ -33,10 +33,7 @@ Please follow each dataset folder in `./data`.
 
 ## Inference
 ```
-python inference.py \
---model_size large \
---model_path ./models/magic_lens_clip_large.pkl \
---dataset circo
+PYTHONPATH=../../scenic:. python3 inference.py   --model_size base   --model_path ../models/magic_lens_clip_base.pkl   --dataset circo   --batch_size 32
 
 ```
 
