@@ -98,6 +98,19 @@ wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar --no-check-ce
 tar -xf ILSVRC2012_img_val.tar
 sh ./extract_ILSVRC.sh
 
+the extraction scipt is missing, use this to reorganise the images
+wget https://raw.githubusercontent.com/tensorflow/models/master/research/slim/datasets/imagenet_2012_validation_synset_labels.txt
+python3 -c "
+import os
+with open('imagenet_2012_validation_synset_labels.txt', 'r') as f:
+    labels = [line.strip() for line in f.readlines()]
+
+for i, label in enumerate(labels):
+    filename = f'ILSVRC2012_val_{i+1:08d}.JPEG'
+    if os.path.exists(filename):
+        os.makedirs(f'real/{label}', exist_ok=True)
+        os.rename(filename, f'real/{label}/{filename}')
+
 The file structure should look like this (w/o showing train/test.json):
 
 ```bash
