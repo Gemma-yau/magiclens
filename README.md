@@ -26,14 +26,7 @@ pip install -r scenic/projects/baselines/clip/requirements.txt
 ```
 
 ### Model Download
-Download model via:
-```
-cd .. # in main folder `magiclens`
-# you may need to use `gcloud auth login` for access, any gmail account should work.
-gsutil cp -R gs://gresearch/magiclens/models ./
-```
-
-OR via [google drive](https://drive.google.com/drive/folders/1MXszMqIIh-yV7cYxWUxP7uHs9gfuTT3u)
+Download model via [google drive](https://drive.google.com/drive/folders/1MXszMqIIh-yV7cYxWUxP7uHs9gfuTT3u)
 
 ### Data Preparation
 Please follow each dataset folder in `./data`.
