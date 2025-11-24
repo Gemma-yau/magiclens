@@ -98,7 +98,7 @@ wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar --no-check-ce
 tar -xf ILSVRC2012_img_val.tar
 sh ./extract_ILSVRC.sh
 
-the extraction scipt is missing, use this to reorganise the images
+the extraction scipt is missing, use this to reorganise the images:
 wget https://raw.githubusercontent.com/tensorflow/models/master/research/slim/datasets/imagenet_2012_validation_synset_labels.txt
 python3 -c "
 import os
